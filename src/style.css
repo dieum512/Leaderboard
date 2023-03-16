@@ -68,11 +68,18 @@ body {
 .container .scores .scores-header .refresh-btn {
   padding: 10px;
   font-size: 18px;
+  height: 45px;
+  transition: 0.5s;
+}
+
+.container .scores .scores-header .refresh-btn:hover {
+  background-color: #1e1e4b;
+  color: #fff;
 }
 
 .container .scores .scores-displayed {
   border: 2px solid #fff;
-  max-height: 400px;
+  max-height: 80%;
   overflow-y: scroll;
 }
 
@@ -83,6 +90,11 @@ body {
   font-size: 20px;
   color: #fff;
 }
+
+.container .scores .scores-displayed .scores-ul li:nth-child(even) {
+    background: rgb(79, 72, 114);
+    opacity: 0.6;
+  }
 
 /* add score */
 
@@ -115,4 +127,10 @@ body {
   float: right;
   margin-right: 10%;
   padding: 10px;
+  transition: 0.5s;
+}
+
+.submit-btn:hover {
+  background-color: #1e1e4b;
+  color: #fff;
 }
