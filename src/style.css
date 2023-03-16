@@ -92,9 +92,9 @@ body {
 }
 
 .container .scores .scores-displayed .scores-ul li:nth-child(even) {
-    background: rgb(79, 72, 114);
-    opacity: 0.6;
-  }
+  background: rgb(79, 72, 114);
+  opacity: 0.6;
+}
 
 /* add score */
 
