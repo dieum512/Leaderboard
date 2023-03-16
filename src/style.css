@@ -72,6 +72,8 @@ body {
 
 .container .scores .scores-displayed {
   border: 2px solid #fff;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
 .container .scores .scores-displayed .scores-ul li {
