@@ -3,9 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wbpack Exercise</title>
+    <title>Leaderboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   <script defer src="main.js"></script></head>
   <body>
-    <h1>Hello webpack!</h1>
+    <h1 class="main-title">Leaderboard</h1>
+    <div class="background"></div>
+    <div class="container">
+      <div class="scores">
+        <div class="scores-header">
+          <h2>Recent scores</h2>
+          <button class="refresh-btn">Refresh</button>
+        </div>
+        <!-- score displayed -->
+        <div class="scores-displayed">
+          <ul class="scores-ul"></ul>
+        </div>
+      </div>
+      <!-- add score -->
+      <div class="add-score">
+        <h2 class="add-score-tilte">Add your score</h2>
+
+        <form action="#" class="add-form">
+          <div class="">
+            <input
+              class="add-name-input input"
+              type="text"
+              id="user"
+              name="user_name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="">
+            <input
+              class="add-sccore-input input"
+              type="number"
+              id="score"
+              name="user-score"
+              placeholder="Your score"
+              required
+            />
+          </div>
+
+          <div class="#">
+            <input class="submit-btn" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

@@ -36,8 +36,14 @@ const getData = async () => {
   displayData(result);
 };
 
+const emptyForms = () => {
+  name.value = '';
+  score.value = '';
+};
+
 form.addEventListener('submit', () => {
   SendData(name.value, score.value);
+  emptyForms();
 });
 
 refresh.addEventListener('click', () => {
